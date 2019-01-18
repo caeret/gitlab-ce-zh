@@ -12,4 +12,4 @@ function build() {
   fi
 }
 
-build 11.6.3-zh
+build 11.6.5-zh
