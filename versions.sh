@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 export VERSIONS=(
-  11.8.0
+  11.8.1
 )
 
 export DOCKERFILES=(
