@@ -4,7 +4,7 @@ export VERSIONS=(
   11.8.3
   11.9.8
   11.10.4
-  11.11.0
+  11.11.1
 )
 
 export DOCKERFILES=(
