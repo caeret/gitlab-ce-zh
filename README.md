@@ -1,6 +1,8 @@
 # Gitlab CE 中文 Docker 镜像
 
-* [11.8, 11.8.0](https://hub.docker.com/r/caeret/gitlab-ce-zh)
+* [11.11.3](https://hub.docker.com/r/caeret/gitlab-ce-zh)
+
+参考 <https://github.com/twang2218/gitlab-ce-zh>
 
 # 使用方法
 
