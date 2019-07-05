@@ -5,6 +5,7 @@ export VERSIONS=(
   11.9.8
   11.10.4
   11.11.3
+  12.0.3
 )
 
 export DOCKERFILES=(
@@ -12,4 +13,5 @@ export DOCKERFILES=(
   11.9/Dockerfile
   11.10/Dockerfile
   11.11/Dockerfile
+  12.0/Dockerfile
 )
