@@ -1,6 +1,6 @@
 # Gitlab CE 中文 Docker 镜像
 
-* [11.11.3](https://hub.docker.com/r/caeret/gitlab-ce-zh)
+* [12.1.0](https://hub.docker.com/r/caeret/gitlab-ce-zh)
 
 参考 <https://github.com/twang2218/gitlab-ce-zh>
 
@@ -12,7 +12,7 @@
 version: '2'
 services:
     gitlab:
-      image: 'caeret/gitlab-ce-zh:11.8.1'
+      image: 'caeret/gitlab-ce-zh:12.1.0'
       restart: unless-stopped
       environment:
         TZ: 'Asia/Shanghai'
