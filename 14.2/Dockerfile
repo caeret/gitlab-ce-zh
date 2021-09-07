@@ -49,24 +49,8 @@ RUN set -xe \
     && export NODE_OPTIONS=--max-old-space-size=4086 \
     && yarn install --frozen-lockfile \
     && bin/bundle install --frozen \
-    && bin/rake gettext:compile
-
-RUN set -xe \
-    && echo " # Regenerating the assets" \
-    && cd ${GITLAB_DIR} \
-    && export NODE_ENV=production \
-    && export RAILS_ENV=production \
-    && export SETUP_DB=false \
-    && export USE_DB=false \
-    && export SKIP_STORAGE_VALIDATION=true \
-    && export WEBPACK_REPORT=true \
-    && export NO_COMPRESSION=true \
-    && export NO_PRIVILEGE_DROP=true \
-    && export NODE_OPTIONS=--max-old-space-size=4086 \
+    && bin/rake gettext:compile \
     && bin/rake gitlab:assets:compile
-
-RUN set -xe \
-    && NODE_OPTIONS="--max-old-space-size=3584" npx webpack --config config/webpack.config.js
 
 RUN set -xe \
     && echo " # Cleaning ..." \

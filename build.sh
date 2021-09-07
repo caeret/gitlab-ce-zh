@@ -14,7 +14,7 @@ function prepare() {
 function build_image() {
   local tag=$1
   local dockerfile=$2
-  docker build -f $dockerfile -t "${DOCKER_USERNAME}/${DOCKER_IMAGE_NAME}:$tag" .
+  docker build --no-cache -f $dockerfile -t "${DOCKER_USERNAME}/${DOCKER_IMAGE_NAME}:$tag" .
   if [[ -n "${DOCKER_PASSWORD}" ]]; then
       echo "Publish image '${DOCKER_USERNAME}/${DOCKER_IMAGE_NAME}:$tag' to Docker Hub ..."
       docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}"
